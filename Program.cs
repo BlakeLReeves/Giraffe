@@ -6,16 +6,9 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            string characterName = "Tom";
-            int characterAge;
-            characterAge = 35;
+            string phrase = "Giraffe Academy";
 
-            Console.WriteLine("There once was a man name " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
-
-            characterName = "Mike";
-            Console.WriteLine("He really liked the name " + characterName);
-            Console.WriteLine("But didn't like being " + characterAge);
+            Console.WriteLine( phrase.Substring(8, 3) );
 
             Console.ReadLine();
         }
