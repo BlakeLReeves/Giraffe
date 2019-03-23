@@ -6,16 +6,18 @@ namespace Giraffe
     {
         static void Main(string[] args)
         {
-            int[] luckNumbers = { 4, 8, 15, 16, 23, 42 };
-            string[] friends = new string[5];
-            friends[0] = "Kyle";
-            friends[1] = "David";
 
-            luckNumbers[1] = 900;
-
-            Console.WriteLine( friends[1] );
-
+            SayHi("Blake", 23);
+            SayHi("David", 29);
+            SayHi("Kyle", 22);
+             
             Console.ReadLine();
         }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + " you are " + age);
+        }
+
     }
 }
