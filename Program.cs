@@ -7,16 +7,15 @@ namespace Giraffe
         static void Main(string[] args)
         {
 
-            SayHi("Blake", 23);
-            SayHi("David", 29);
-            SayHi("Kyle", 22);
-             
+            Console.WriteLine(CubeNum(5));
+
             Console.ReadLine();
         }
 
-        static void SayHi(string name, int age)
+        static int CubeNum(int num)
         {
-            Console.WriteLine("Hello " + name + " you are " + age);
+            int result = num * num * num;
+            return result;
         }
 
     }
